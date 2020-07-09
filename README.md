@@ -28,4 +28,4 @@ This example demonstrates how to setup a Kinesis producer and consumer to send a
 - send a HTTP POST request to the sender lambda with a JSON payload
 
 ## Acknowledgements
-Adapted from Miguel Frazao's (SQS Standard example)[https://github.com/serverless/examples/tree/master/aws-node-typescript-sqs-standard].
+Adapted from Miguel Frazao's [SQS Standard example](https://github.com/serverless/examples/tree/master/aws-node-typescript-sqs-standard).
