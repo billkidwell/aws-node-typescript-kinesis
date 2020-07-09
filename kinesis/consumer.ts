@@ -1,13 +1,13 @@
 import {
   KinesisStreamHandler,
-  KinesisStreamRecordPayload
+  KinesisStreamRecordPayload,
 } from 'aws-lambda';
 
 const consumer: KinesisStreamHandler = async (event) => {
   try {
     for (const record of event.Records) {
-      let payload: KinesisStreamRecordPayload = record.kinesis;
-      let message: string = Buffer.from(payload.data, 'base64').toString();
+      const payload: KinesisStreamRecordPayload = record.kinesis;
+      const message: string = Buffer.from(payload.data, 'base64').toString();
 
       console.log(
         `Kinesis Message:
@@ -15,8 +15,7 @@ const consumer: KinesisStreamHandler = async (event) => {
           sequence number: ${payload.sequenceNumber}
           kinesis schema version: ${payload.kinesisSchemaVersion}
           data: ${message}
-        `
-        );
+        `);
 
       // Do something
     }
