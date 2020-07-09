@@ -1,6 +1,6 @@
 <!--
-title: 'AWS Kinesis Data Streams Standard Example (NodeJS & Typescript)'
-description: 'This example demonstrates how to setup a Kinesis Producer/Consumer with Typescript.'
+title: 'AWS Kinesis Data Streams Example (NodeJS & Typescript)'
+description: 'Produce and Consume data on a Kinesis Data Stream with Typescript.'
 layout: Doc
 framework: v1
 platform: AWS
